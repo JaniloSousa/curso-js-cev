@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05: Variáveis</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+        '=' -> operador de atribuição, lê-se "recebe"
+        '+' -> operador ou para soma aritmética ou para concatenar (juntar strings)
+            number + number -> soma aritmética
+            string + string -> concatena
+        */
+        var nome = window.prompt(`Olá, qual é o seu nome? `);
+        window.alert(`Muito prazer em lhe conhecer ${nome}!`);
+
+        var cidade = window.prompt("Em qual cidade você mora? ");
+        window.alert(cidade + " é uma cidade muito bonita!");
+
+        var cor = window.prompt("Qual é a sua cor preferida?");
+        window.alert("Uau, " + cor + " é uma cor muito bonita!");
+    </script>
+</body>
+</html>
