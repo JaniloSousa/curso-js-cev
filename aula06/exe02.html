@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco sobre tratamento de strings</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: wheat;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Entre com o seu nome: ");
+
+        document.write(`<p>Olá, <strong>${nome}</strong>! Muito prazer em lhe conhecer!</p>`);
+
+        document.write(`<p>Seu nome tem ${nome.length} caracteres!</p>`);
+
+        document.writeln(`<p>Seu nome todo em maiúsculo fica ${nome.toUpperCase()}</p>`);
+
+        document.write(`<p>Seu nome todo em minúsculo fica ${nome.toLowerCase()}</p>`);
+    </script>
+</body>
+</html>

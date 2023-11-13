@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco sobre tratamento de números</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: wheat;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var num = window.prompt("Entre com um número: ");
+
+        num = String(num);
+        document.write(`${num} <br>`);
+        document.write(`${num.replace('.', ',')} <br>`);
+
+        document.write("<hr>");
+
+        num = Number(num);
+        document.write(`${num.toFixed(2)} <br>`);
+        document.write(`${num.toLocaleString('pt-br', {style: 'currency', currency: 'brl'})} <br>`);
+        document.write(`${num.toLocaleString('pt-br', {style: 'currency', currency: 'usd'})} <br>`);
+        document.write(`${num.toLocaleString('pt-br', {style: 'currency', currency: 'eur'})} <br>`);
+    </script>
+</body>
+</html>

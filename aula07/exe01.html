@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07: Operadores (Parte 1) - Operadores aritméticos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: wheat;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var num1 = Number(window.prompt(`Entre com um número: `));
+        var num2 = Number(window.prompt(`Entre com outro número: `));
+
+        document.write(`SOMA: ${num1 + num2} <br>`);
+        document.write(`SUBTRAÇÃO: ${num1 - num2} <br>`);
+        document.write(`DIVISÃO REAL: ${num1 / num2} <br>`);
+        document.write(`PRODUTO: ${num1 * num2} <br>`);
+
+        document.write(`<hr>`);
+
+        document.write(`RESTO DA DIVISÃO: ${num1 % num2} <br>`);
+        document.write(`POTENCIAÇÃO: ${num1 ** num2} <br>`);
+
+        document.write(`<hr>`);
+
+        num1 += 2; // num1 = num1 + 2;
+        num2 += 2; // num2 = num2 + 2;
+        document.write(`AUTO-ATRIBUIÇÃO (num1 + 2): ${num1} <br>`);
+        document.write(`AUTO-ATRIBUIÇÃO (num2 + 2): ${num2} <br>`);
+
+        document.write(`<hr>`);
+
+        num1++; // num1 = num1 + 1;
+        num2++; // num2 = num2 + 1;
+        document.write(`INCREMENTO (num1++): ${num1} <br>`);
+        document.write(`INCREMENTO (num2++): ${num2} <br>`);
+
+        /*
+        PRÉ-INCREMENTO X PÓS-INCREMENTO:
+            * PRÉ-INCREMENTO (++num): soma ou subtrai e depois faz o que tem que ser feito.
+
+            * PÓS-INCREMENTO (num++): faz o que tem que ser feito e depois soma ou subtrai.
+        */
+    </script>
+</body>
+</html>

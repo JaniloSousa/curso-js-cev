@@ -14,7 +14,19 @@
 </head>
 <body>
     <script>
+        // entrada de dados
+        var n1 = window.prompt("Digite um número: ");
+        var n2 = window.prompt("Digite outro número: ");
 
+        // tratamento de dados
+        n1 = Number(n1);
+        n2 = Number(n2);
+
+        // processamento de dados
+        var soma = n1 + n2;
+
+        // saída de dados
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`); // '${}' -> template strings
     </script>
 </body>
 </html>
