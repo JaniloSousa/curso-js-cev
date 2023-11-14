@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08: Operadores em Js Parte 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: wheat;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a = Number(window.prompt("Entre com um número: "));
+        var b = Number(window.prompt("Entre com outro número: "));
+
+        document.write(`${a} é maior que ${b}: ${a > b} <br>`);
+        document.write(`${a} é menor que ${b}: ${a < b} <br>`);
+        document.write(`${a} é maior ou igual a ${b}: ${a >= b} <br>`);
+        document.write(`${a} é menor ou igual a ${b}: ${a <= b} <br>`);
+        document.write(`${a} é igual a ${b}: ${a == b} <br>`);
+        document.write(`${a} é diferente de ${b}: ${a != b} <br>`);
+
+        document.write(`<hr>`);
+
+        document.write(`5(number) é igual a 5(number): ${5 == 5} <br>`);
+        document.write(`5(number) é igual a '5'(string): ${5 == '5'} <br>`);
+        document.write(`5(number) é restritamente igual a '5'(string): ${5 === '5'} <br>`);
+
+        document.write(`<hr>`);
+
+        var idade = 20;
+        var altura = 1.6;
+        document.write(`Para brincar neste brinquedo é presciso ser maior de idade e ter uma altura superior ou igual 1.70! `);
+        document.write(`Vai poder brincar no brinquedo?: ${idade >= 18 && altura >= 1.7}`);
+
+        document.write(`<hr>`);
+
+        var estudante = true;
+        var deficiente = false;
+        document.write(`Para poder pagar apenas meia entrada é presciso ser estudante ou deficiente físico! `);
+        document.write(`Vai poder pagar meia: ${estudante == true || deficiente == true}`);
+
+        document.write(`<hr>`);
+
+        document.write(!true);
+
+        document.write(`<hr>`);
+
+        var nota = 5;
+        var situacao = nota >= 7 ? "Aprovado" : "Reprovado";
+        document.write(situacao);
+    </script>
+</body>
+</html>
