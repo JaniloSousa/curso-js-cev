@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Este é meu primeiro parágrafo</p>
+
+    <p>Este é meu <strong>segundo</strong> parágrafo</p>
+
+    <ul>
+        <li name="item">Item 1</li>
+        <li name="item">Item 2</li>
+        <li class="elem">Item 3</li>
+        <li class="elem">Item 4</li>
+    </ul>
+
+    <p id="especial">Este é um parágrafo com um id especial.</p>
+    <p class="especial">Este é um parágrafo com uma classe especial.</p>
+    <p class="especial">Este é um parágrafo com uma classe especial.</p>
+    <p class="especial">Este é um parágrafo com uma classe especial.</p>
+
+    <div id="msg">Mensagem aqui</div>
+
+    <script>
+        // maneira mais fácil de escrever no documento
+        window.document.write("<br>Está é a maneira mais fácil de escrever conteúdo no documento!");
+
+        // algumas informações do sistema
+        window.document.write("<hr> <h2>Algumas informações do sistema: </h2>");
+        window.document.write(window.document.charset + "<br>");
+        window.document.write(window.navigator.appName + "<br>");
+        window.document.write(window.document.URL + "<hr>");
+        
+        // pegando elementos pela tag
+        var p1 = window.document.getElementsByTagName('p')[0];
+
+        var p2 = window.document.getElementsByTagName('p')[1];
+
+        // mudando a cor
+        p1.style.color = 'red';
+        p2.style.color = 'blue';
+
+        // pegando o body
+        var corpo = window.document.body;
+        corpo.style.background = 'gray'; // mudando a cor de fundo
+
+        // pegando elementos pelo seu id
+        var msg = window.document.getElementById("msg");
+        msg.style.background = 'green';
+
+        // pegando elementos pelo seu name
+        var elemento = window.document.getElementsByName("item")[1];
+        elemento.style.color = 'pink';
+
+        // pegando elementos pela sua classe
+        var elemento2 = window.document.getElementsByClassName("elem")[0];
+        elemento2.style.color = 'purple';
+
+        // pegando elementos pelo seletor inteligente
+        var componente1 = window.document.querySelector("p#especial");
+        componente1.style.color = 'orange';
+
+        var componente2 = window.document.querySelector("p.especial");
+        componente2.style.color = 'black';
+
+        var paragrafo = window.document.querySelectorAll("p.especial")[2];
+        paragrafo.style.color = 'yellow';
+    </script>
+</body>
+</html>
