@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Estrangeiro?</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Brasileiro ou Estrangeiro?</h1>
+        De qual país você vem?<br>
+        <input type="text" name="input_naci" id="input_naci">
+        <input type="button" value="Ver" onclick="ver()">
+
+        <div id="res">
+
+        </div>
+    </main>
+
+    <script>
+        function ver() {
+            var input_naci = window.document.querySelector("input#input_naci");
+            var res = window.document.querySelector("div#res");
+
+            var naci = input_naci.value;
+            naci = naci.toLowerCase();
+
+            if (naci == "brasil") {
+                res.innerHTML = `<p><strong>Você é Brasileiro!</strong></p>`;
+            } else {
+                res.innerHTML = `<p><strong>Você é estrangeiro!</strong></p>`;
+            }
+        }
+    </script>
+</body>
+</html>
